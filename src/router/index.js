@@ -1,15 +1,28 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import Home from '../views/Home.vue'
+import Read from '../views/Read.vue'
+import Login from "@/views/Login";
+import Bookcase from "@/views/Bookcase";
 
 Vue.use(VueRouter)
 
 const routes = [
   {
     path: '/',
-    name: 'Home',
-    component: Home
+    name: 'Login',
+    component: Login
+  },
+  {
+    path: '/Read',
+    name: 'Read',
+    component: Read
+  },
+  {
+    path: '/bookcase',
+    name:"Bookcase",
+    component: Bookcase
   }
+
 ]
 
 const router = new VueRouter({

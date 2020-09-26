@@ -6,3 +6,7 @@
     <router-view/>
   </div>
 </template>
+
+<style>
+    @import "assets/css/rest.css";
+</style>
